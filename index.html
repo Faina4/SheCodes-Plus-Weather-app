@@ -25,110 +25,114 @@
     <title>WeatherAppVS</title>
   </head>
   <body>
-    <div class="container">
-      <p>Current weather 🌡️</p>
+    <div class="widget-container">
+      <div class="container">
+        <p>Current weather 🌡️</p>
 
-      <div class="row">
-        <div class="col-4">
-          <h1 id="city"></h1>
-          <h2>
-            <div class="clearfix">
-              <span class="temperature" id="currentTemperature"> </span>
-              <a href="#" class="degrees" id="celsiusDegrees"> °C </a>
+        <div class="row">
+          <div class="col-4">
+            <h1 id="city"></h1>
+            <h2>
+              <div class="clearfix">
+                <span class="temperature" id="currentTemperature"> </span>
+                <a href="#" class="degrees" id="celsiusDegrees"> °C </a>
 
-              <i class="fa-solid fa-sun float-right"></i>
-            </div>
-          </h2>
+                <i class="fa-solid fa-sun float-right"></i>
+              </div>
+            </h2>
+          </div>
+          <div class="col-8">
+            <form class="search-form" id="search-city">
+              <div class="row">
+                <div class="col-9">
+                  <input
+                    class="form-control"
+                    type="text"
+                    id="city-input"
+                    placeholder="Enter your city "
+                  />
+                </div>
+                <div class="col-3">
+                  <input
+                    class="form-control btn btn-outline-dark"
+                    type="submit"
+                    value="Submit"
+                  />
+                </div>
+              </div>
+              <br />
+              <div class="row">
+                <div class="col-9"></div>
+                <div class="col-3">
+                  <button
+                    type="button"
+                    class="form-control btn btn-outline-success"
+                    id="geolocation-btn"
+                  >
+                    Current Location
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
-        <div class="col-8">
-          <form class="search-form" id="search-city">
-            <div class="row">
-              <div class="col-9">
-                <input
-                  class="form-control"
-                  type="text"
-                  id="city-input"
-                  placeholder="Enter your city "
-                />
-              </div>
-              <div class="col-3">
-                <input
-                  class="form-control btn btn-outline-dark"
-                  type="submit"
-                  value="Submit"
-                />
-              </div>
-            </div>
+
+        <div class="row">
+          <div class="col-3">
+            <ul class="actual">
+              <li>
+                <strong class="day" id="actualDay"> Today: May, 9 </strong>
+              </li>
+              <li class="day" id="actualWeekDay">Saturday 22:30</li>
+              <li>
+                Humidity
+                <span id="currentHumidity"> </span>
+                %
+              </li>
+              <li>
+                Pres.
+                <span id="currentPressure"> </span>
+                mm
+              </li>
+              <li>
+                Wind:
+                <span id="currentWind"></span> km/h
+              </li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <strong class="day">May 15, 2022</strong>
+            <i class="fa-solid fa-cloud-sun"></i>
             <br />
-            <div class="row">
-              <div class="col-9"></div>
-              <div class="col-3">
-                <button
-                  type="button"
-                  class="form-control btn btn-outline-success"
-                  id="geolocation-btn"
-                >
-                  Current Location
-                </button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
 
-      <div class="row">
-        <div class="col-3">
-          <ul class="actual">
-            <li><strong class="day" id="actualDay"> Today: May, 9 </strong></li>
-            <li class="day" id="actualWeekDay">Saturday 22:30</li>
-            <li>
-              Humidity
-              <span id="currentHumidity"> </span>
-              %
-            </li>
-            <li>
-              Pres.
-              <span id="currentPressure"> </span>
-              mm
-            </li>
-            <li>
-              Wind:
-              <span id="currentWind"></span> km/h
-            </li>
-          </ul>
-        </div>
-        <div class="col-3">
-          <strong class="day">May 15, 2022</strong>
-          <i class="fa-solid fa-cloud-sun"></i>
-          <br />
+            <ul>
+              <li>Sunday</li>
+              <li>Day: +16° ... +18°C</li>
+              <li>Night: +12° ... +13°C</li>
+              <li>Cloudiness and precipitation: sunny, partly cloudy</li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <strong class="day"> May 16, 2022 </strong>
+            <i class="fa-solid fa-cloud"></i>
 
-          <ul>
-            <li>Sunday</li>
-            <li>Day: +16° ... +18°C</li>
-            <li>Night: +12° ... +13°C</li>
-            <li>Cloudiness and precipitation: sunny, partly cloudy</li>
-          </ul>
-        </div>
-        <div class="col-3">
-          <strong class="day"> May 16, 2022 </strong>
-          <i class="fa-solid fa-cloud"></i>
-
-          <ul>
-            <li>Monday</li>
-            <li>Day: +14° ... +16°C</li>
-            <li>Night: +8° ... +9°С</li>
-            <li>Cloudiness and precipitation: mostly cloudy</li>
-          </ul>
-        </div>
-        <div class="col-3">
-          <strong class="day"> May 17, 2022</strong>
-          <i class="fa-solid fa-cloud-showers-heavy"></i> <br />
-          <ul>
-            <li>Tuesday</li>
-            <li>Day: +14° ... +17°C</li>
-            <li>Night: +8° ... +9°C</li>
-            <li>Cloudiness and precipitation: raining</li>
-          </ul>
+            <ul>
+              <li>Monday</li>
+              <li>Day: +14° ... +16°C</li>
+              <li>Night: +8° ... +9°С</li>
+              <li>Cloudiness and precipitation: mostly cloudy</li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <strong class="day"> May 17, 2022</strong>
+            <i class="fa-solid fa-cloud-showers-heavy"></i> <br />
+            <ul>
+              <li>Tuesday</li>
+              <li>Day: +14° ... +17°C</li>
+              <li>Night: +8° ... +9°C</li>
+              <li>Cloudiness and precipitation: raining</li>
+            </ul>
+          </div>
         </div>
       </div>
       <small class="footer">
@@ -140,8 +144,7 @@
         </a>
         by FaIna
       </small>
-
-      <script src="src/index.js"></script>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>

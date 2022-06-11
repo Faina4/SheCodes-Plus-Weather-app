@@ -2,13 +2,14 @@ body {
   font-family: "Patrick Hand", cursive;
   padding-top: 35px;
   margin: 0 auto;
-
   padding: 0;
-
   width: 90%;
 }
+.widget-container {
+  padding: 10px 20px;
+}
 .container {
-  margin-top: 35px;
+  margin: 35px 0px 12px 0px;
   padding: 10px 20px;
   background: #e8ecd6;
   border: 1px solid black;
@@ -93,4 +94,7 @@ li {
   border-color: black;
   font-size: 45px;
   margin-left: 5px;
+}
+.footer {
+  margin-top: 5px;
 }
