@@ -1,19 +1,9 @@
 body {
   font-family: "Patrick Hand", cursive;
   padding-top: 35px;
-  margin: 0 auto;
+  margin: 10px auto 0;
   padding: 0;
-  width: 90%;
-}
-.widget-container {
-  padding: 10px 20px;
-}
-.container {
-  margin: 35px 0px 12px 0px;
-  padding: 10px 20px;
-  background: #e8ecd6;
-  border: 1px solid black;
-  border-radius: 20px;
+
   max-width: 900px;
 }
 
@@ -30,6 +20,16 @@ h1 {
 h2 {
   font-size: 45px;
   text-shadow: 2px 5px 4px rgb(233, 136, 9);
+}
+.widget-container {
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+.container {
+  background: #e8ecd6;
+  border: 1px solid black;
+  border-radius: 20px;
+  max-width: 900px;
 }
 .fa-sun {
   color: black;
@@ -72,9 +72,7 @@ h2 {
 .col-8 {
   padding: 10px 10px;
 }
-.umbrellas {
-  width: 400px;
-}
+
 ul {
   padding: 0;
 }
